@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-13 15:44:13.176512",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_y5t9",
+  "item_code",
+  "item_attribute_name",
+  "item_attribute",
+  "cut_area",
+  "avg",
+  "meter",
+  "rate",
+  "item_price",
+  "range",
+  "pcs",
+  "per_bale",
+  "parent_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_y5t9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_attribute.attribute",
+   "fieldname": "item_attribute_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Attribute Name"
+  },
+  {
+   "fieldname": "item_attribute",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Item Attribute",
+   "options": "Item Attribute Name"
+  },
+  {
+   "fieldname": "cut_area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cut Area"
+  },
+  {
+   "fieldname": "avg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Avg",
+   "precision": "2"
+  },
+  {
+   "fieldname": "meter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meter"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_price",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Price"
+  },
+  {
+   "fieldname": "range",
+   "fieldtype": "Data",
+   "label": "Range"
+  },
+  {
+   "fieldname": "pcs",
+   "fieldtype": "Data",
+   "label": "PCs"
+  },
+  {
+   "fieldname": "per_bale",
+   "fieldtype": "Data",
+   "label": "Per Bale"
+  },
+  {
+   "fieldname": "parent_item",
+   "fieldtype": "Data",
+   "label": "Parent Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-13 15:44:13.176512",
+ "modified_by": "Administrator",
+ "module": "Cls",
+ "name": "Item Variants",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

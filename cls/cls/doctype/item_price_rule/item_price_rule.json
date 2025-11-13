@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-11-13 15:46:30.692763",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fabric",
+  "labour_charge",
+  "column_break_gsrr",
+  "fabric_price",
+  "section_break_zfbv",
+  "fg_templates",
+  "item_variant"
+ ],
+ "fields": [
+  {
+   "fieldname": "fabric",
+   "fieldtype": "Link",
+   "label": "Fabric",
+   "link_filters": "[[\"Item\",\"item_group\",\"in\",[\"Fabric\",\"Fabric HD\"]]]",
+   "options": "Item"
+  },
+  {
+   "fieldname": "labour_charge",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Labour Charge"
+  },
+  {
+   "fieldname": "column_break_gsrr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fabric_price",
+   "fieldtype": "Data",
+   "label": "Fabric Price"
+  },
+  {
+   "fieldname": "section_break_zfbv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fg_templates",
+   "fieldtype": "Table",
+   "label": "Finished Goods",
+   "options": "FG Templates"
+  },
+  {
+   "fieldname": "item_variant",
+   "fieldtype": "Table",
+   "label": "Item Variant",
+   "options": "Item Variants"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-13 15:46:30.692763",
+ "modified_by": "Administrator",
+ "module": "Cls",
+ "name": "Item Price Rule",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

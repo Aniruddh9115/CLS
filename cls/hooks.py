@@ -8,7 +8,12 @@ app_license = "mit"
 # Apps
 # ------------------
 override_doctype_class = {
-    "Sales Order": "cls.override.sales_order.CustomSalesOrder"
+    "Sales Order": "cls.override.sales_order.CustomSalesOrder",
+    "Delivery Note": 'cls.override.delivery_note.CustomeDeliveryNote'
+}
+
+override_whitelisted_methods = {
+    "erpnext.setup.doctype.employee.employee.create_user": "cls.override.employee.create_user"
 }
 
 # required_apps = []
