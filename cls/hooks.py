@@ -7,6 +7,9 @@ app_license = "mit"
 
 # Apps
 # ------------------
+override_doctype_class = {
+    "Sales Order": "cls.override.sales_order.CustomSalesOrder"
+}
 
 # required_apps = []
 
@@ -245,6 +248,6 @@ app_license = "mit"
 fixtures = [
     {
         "doctype": "Custom Field",
-        "filters": [["module", "=", "CLS"]]
+        "filters": [["module", "=", "Cls"]]
     }
 ]
